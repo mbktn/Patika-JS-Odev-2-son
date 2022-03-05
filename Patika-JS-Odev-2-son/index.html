@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Yapılacaklar Listem</title>
+</head>
+<div class="container  justify-content-center p-3">
+    <div style="background-color:#94B49F;">
+        <center> <img src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" alt="" style="display: inline-block; background-color: #B4CFB0;"></center>
+        <h1 id="header" style="text-align: center;">Yapılacaklar Listesi</h1>
+        <div>
+            <div class="card-body">
+                <form id="addTaskForm">
+                    <div class="input-group">
+                        <input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Bugün ne yapacaksın?" aria-describedby="btnAddNewTask">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="submit" id="btnAddNewTask" style="width: 150px;">
+								Ekle
+							</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm delete-all mx-auto " style="width: 500px;">	Hepsini Sil</a>
+    </div>
+    <div class="mt-2">
+        <ul id="task-list" class="list-group">
+
+        </ul>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
